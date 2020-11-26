@@ -7,7 +7,7 @@ Below is explained what languages, workflows and style guides are used to realiz
     - [Talen:](#talen)
     - [Frameworks:](#frameworks)
 - [Git workflow](#git-workflow)
-- [Usefull links](#Usefull links)
+- [Usefull links](#usefull-links)
 
 # Talen en Frameworks
 ## Talen:
