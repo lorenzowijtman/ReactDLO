@@ -1,5 +1,5 @@
 # Project pad (oba)
-In dit document wordt uitgelegd wat voor talen, workflows en style guides we gaan gebruiken om ons digitale leerplatform te realiseren.
+Below is explained what languages, workflows and style guides are used to realize this project.
 
 
 # Table of content
@@ -7,7 +7,7 @@ In dit document wordt uitgelegd wat voor talen, workflows en style guides we gaa
     - [Talen:](#talen)
     - [Frameworks:](#frameworks)
 - [Git workflow](#git-workflow)
-- [Handige links](#handige-links)
+- [Usefull links](#Usefull links)
 
 # Talen en Frameworks
 ## Talen:
@@ -30,7 +30,7 @@ We gaan de “Feature Branch Workflow” gebruiken er is meer te lezen over deze
 
 [Guide meteor](https://guide.meteor.com/)
 
-# Handige links
+# Usefull links
 [React Patterns](https://reactpatterns.com/#destructuring-arguments)
 
 [React bits](https://vasanthk.gitbooks.io/react-bits/)
@@ -39,4 +39,3 @@ We gaan de “Feature Branch Workflow” gebruiken er is meer te lezen over deze
 
 [Html5 lesboek](https://www.google.nl/url?sa=t&source=web&rct=j&url=https://www.webmaster-college.nl/pluginfile.php%3Ffile%3D%252F292%252Fmod_resource%252Fcontent%252F2%252Fhtml5-lesboek.pdf&ved=2ahUKEwjz5-3G66zZAhVCGsAKHYYtAOkQFjAAegQIEhAB&usg=AOvVaw2lELfPc_vvFQi-IFz7vaKV)
 
- Vanaf hfd 5 intermezzo is het niet meer waard om te lezen
