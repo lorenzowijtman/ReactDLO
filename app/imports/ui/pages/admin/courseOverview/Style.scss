@@ -1,0 +1,39 @@
+.subject-overview-container {
+  .top-container {
+    border: 1px solid gray;
+    width: 100%;
+    margin: 5vh auto;
+    padding: 10px;
+
+    .new-course-btn {
+      margin-right: 10px;
+    }
+  }
+
+  .result-list {
+    border: 1px;
+    width: 100%;
+    margin: 5vh auto;
+
+    table,
+    th,
+    td {
+      width: 100%;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th,
+    td {
+      padding: 15px;
+    }
+    .link-to-course-subject {
+      background-color: transparent;
+      float: right;
+      border: none;
+    }
+  }
+
+  .total-selected-text {
+    float: right;
+  }
+}

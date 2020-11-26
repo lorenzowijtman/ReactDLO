@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+//     -webkit-font-smoothing: antialiased;
+//    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: $base-font;
+    font-size: $base-font-size;
+    color: $base-font-color;
+}
+
+.paragraph {
+    font-size: $base-font-size;
+    color: $base-font-color;
+    align-self: center;
+
+    &--right {
+        text-align: right;
+    }
+
+    &--smaller {
+        font-size: 0.75rem;
+    }
+}

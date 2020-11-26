@@ -1,0 +1,49 @@
+// TODO REMOVE
+
+import React from 'react';
+import AddQuestions from '../../../pages/admin/addQuestions/AddQuestions';
+
+const QuestionBlock = props => (
+  <div className="QuestionDiv">
+    <p>Question {props.index}</p>
+    <form>
+      <input type="text" className="Question" />
+      <p>Answers</p>
+      <p>
+        <input type="text" className="Answer" />
+        <input
+          name="radioGroup"
+          className="radioGroup"
+          type="radio"
+          onChange={this.CheckboxStatus}
+        />
+      </p>
+      <p>
+        <input type="text" className="Answer" />
+        <input
+          name="radioGroup"
+          className="radioGroup"
+          type="radio"
+          onChange={this.CheckboxStatus}
+        />
+      </p>
+      <p>
+        <input type="text" className="Answer" />
+        <input
+          name="radioGroup"
+          className="radioGroup"
+          type="radio"
+          onChange={this.CheckboxStatus}
+        />
+      </p>
+    </form>
+    <div>
+      <UploadImage />
+    </div>
+    <button className="DeleteButton" onClick={AddQuestions.removeQuestionBlock}>
+      Delete
+    </button>
+  </div>
+);
+
+export default QuestionBlock;

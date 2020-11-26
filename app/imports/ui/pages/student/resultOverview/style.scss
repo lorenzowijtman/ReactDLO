@@ -1,0 +1,10 @@
+.result-overview {
+    height: 100%;
+    margin-left: 10px;
+
+    .result-overview-container {
+        height: calc(100% - 46px);
+        overflow-y: auto;
+        max-height: 100vh;
+    }
+}

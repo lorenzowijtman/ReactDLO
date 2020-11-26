@@ -1,0 +1,11 @@
+$break-large: 1100px;
+$break-medium: 800px;
+$break-small: 768px;
+
+.grid {
+    &--hide-medium {
+        @media screen and (max-width: #{$break-medium}) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.block {
+    &--admin {
+        padding: $admin-small-spacing;
+        border: 1px solid $light-gray;
+        background-color: $white;
+    }
+
+    &--darken {
+        background-color: $lightest-gray;
+    }
+
+    &--align-middle {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    &--3-cols {
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        grid-column-gap: $admin-small-spacing;
+        justify-content: start;
+    }
+
+    &--max-400 {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: $heading-font-size;
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: $admin-small-spacing;
+    }
+}

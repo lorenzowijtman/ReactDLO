@@ -1,0 +1,34 @@
+.input {
+    font-size: $base-font;
+    color: $dark-gray;
+    border: 0;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+    }
+
+    &--header {
+        font-size: $heading-font-size;
+    }
+
+    &--border {
+        border: 1px solid $light-gray;
+    }
+
+    &--textarea {
+        border: 1px solid $medium-gray;
+        padding: 0.3em;
+        resize: none;
+        font-weight: 400;
+    }
+
+    &--text {
+        border: 1px solid $medium-gray;
+        padding: 0.625em;
+        
+    }
+}

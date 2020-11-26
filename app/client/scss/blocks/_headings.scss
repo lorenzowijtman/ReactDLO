@@ -1,0 +1,16 @@
+.title {
+    font-size: $heading-font-size;
+    color: $dark-gray;
+    font-weight: 500;
+    margin: 0;
+
+    &--color {
+        &---light {
+            color: $white;
+        }
+    }
+
+    &--uppercase {
+        text-transform: uppercase;
+    }
+}

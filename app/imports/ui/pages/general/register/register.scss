@@ -1,0 +1,98 @@
+.register-page {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+
+    .block:first-child {
+        margin-bottom: 30px;
+    }
+}
+
+.center-div {
+    text-align: center;
+}
+
+.account-container {
+    
+    background-color: #FBFBFB;
+    width : 40%;
+    min-width: 40%;
+    margin-top : 100px;
+    margin-left : auto;
+    margin-right : auto;
+
+    padding-bottom:20px;
+
+    .account-header {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .to-login {
+        margin-top : 20px;
+        margin-bottom : 20px;
+        color: white;
+        border: 1px solid red;
+        background-color: red;
+        min-width: 50%;
+    }
+}
+
+.register-title-container {
+    width: 40%;
+    min-width : 40%;
+    margin-top : 20px;
+    margin-left : auto;
+    margin-right : auto;
+    padding-bottom : 20px;
+    background-color: #FBFBFB;
+
+    box-sizing: content-box;
+
+    .register-header {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .register-container { 
+        width : 90%;
+        margin : auto;
+        margin-bottom: 25px;
+
+        box-sizing: content-box;
+
+        .register-text {
+            margin-left : 10%;
+        }
+        .register-input {
+            margin-left : 10%;
+            width : 80%;
+
+            &.error {
+                border-color: red;
+            }
+        }
+        .register-button {
+            margin-top : 20px;
+            margin-bottom : 20px;
+            min-width : 50%;
+            border: 1px solid red;
+            background-color: red;
+            color: white;
+        }
+        .show-warning {
+            font-weight: bold;
+            text-align: center;
+           
+            &.empty-fields {
+                color: red;
+            }
+            &.success-registration {
+                color: #008000;
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+.dashboard-container {
+    .quick-link-container {
+        @media screen and (max-width: #{$break-large}) {
+            flex-direction: column;
+        }
+    }
+}

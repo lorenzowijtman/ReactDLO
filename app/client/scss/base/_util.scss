@@ -1,0 +1,14 @@
+.util {
+    &--align-right {
+        align-self: end;
+    }
+
+    &--offset-top {
+        margin-top: $admin-small-spacing;
+    }
+}
+
+.oba-background {
+    @include background-image('/images/logo-background.svg');
+    height: 100vh;
+}

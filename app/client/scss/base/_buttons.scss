@@ -1,0 +1,42 @@
+.button {
+    border: none;
+    // margin-right: $admin-small-spacing;
+    padding: 0.5em 0.75em;
+    text-decoration: none;
+
+    &--arrow {
+        @include background-image('/images/admin/arrow-right.svg', contain);
+
+        width: 10px;
+        height: 18px;
+        display: block;
+        padding: 0;
+    }
+
+    &--primary {
+        background-color: $red;
+        color: $white;
+        border: 1px solid $red;
+        place-self: center;
+    }
+
+    &--secondary {
+        background-color: transparent;
+        color: $red;
+        border: 1px solid $red;
+    }
+
+    &--spacing {
+        margin-right: $admin-small-spacing;
+    }
+
+    &--arrow-down {
+        @include background-image('/images/admin/arrow-down.svg', contain);
+
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        padding: 0;
+        vertical-align: middle;
+    }
+}

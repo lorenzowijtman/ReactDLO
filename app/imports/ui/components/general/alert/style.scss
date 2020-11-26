@@ -1,0 +1,61 @@
+$success-color: #4CAF50;
+$warning-color: #FF9800;
+$danger-color: #F44336;
+$notice-color: #2196F3;
+$white: #fff;
+
+.alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5px 24px;
+    background-color: $white;
+    color: $white;
+    width: 100%;
+    font-weight: 300;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.is-visible {
+        transform: translateY(0);
+        pointer-events: all;
+    }
+
+    &.success {
+        background-color: $success-color;
+    }
+
+    &.warning {
+        background-color: $warning-color;
+    }
+
+    &.danger {
+        background-color: $danger-color;
+    }
+
+    &.notice {
+        background-color: $notice-color;
+    }
+
+    .alert-text {
+        display: inline-block;
+        float: left;
+    }
+
+    .alert-close {
+        float: right;
+        appearance: none;
+        -webkit-appearance: none;
+        padding: 0;
+        border: 0;
+        width: 24px;
+        height: 24px;
+        background-image: url('/images/circle-remove@1x.png');
+        background-size: contain;
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,21 @@
+.drag-and-drop-box {
+  .question-box,
+  .answer-box {
+    float: left;
+    width: 47%;
+    height: 215px;
+    overflow: auto;
+    max-height: 215px;
+
+    &.margin-left {
+      margin-left: 10px;
+    }
+  }
+
+  .question-block-bg {
+    background-color: #ffffe0;
+  }
+  .answer-block-bg {
+    background-color: lightgreen;
+  }
+}

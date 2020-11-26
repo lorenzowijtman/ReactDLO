@@ -1,0 +1,87 @@
+.assignment-statistics-container {
+    .top-container{
+        border: 1px solid gray;
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 10px;
+
+        .assignment-counter {
+            float: left;
+            margin-right: 30%;
+        }
+        .result-percentage {
+            font-weight: bold;
+        }
+        .person-selectbox {
+            float: right;   
+        }
+    }
+
+    .statistics-container {
+        background-color: #ffffff;
+        width: 100%;
+        overflow: hidden;
+
+        .subject-title {
+            font-weight: bold;
+            padding: 10px;
+            font-size: 20px;
+        }
+        
+        .question-outside-container {
+            border: 1px solid grey;
+            float: left;
+            margin: 12px;
+            width: 48%;
+            padding-left: 20px;
+            background-color: #fbfbfb;
+
+            .question-sentence {
+                font-size: 13px;
+            }
+
+            .bar-chart-container {
+                border: 1px solid grey;
+                width: 97%;
+                height: 200px;
+                max-height: 200px;
+                margin-bottom: 10px;
+                background-color: #ffffff;
+                padding: 5px 0px 1px 10px;
+                position: relative;
+
+                .bar-in-chart {
+                    width: 100px;
+                    max-width: 100px;
+                    max-height: 100px;
+                    position: absolute;
+                    bottom: 0;                    
+                    
+                    &.green-bar {
+                        border: 1px solid #4cb050;
+                        color: #4cb050;
+                        background-color: #4cb050;
+                        left: 30%;
+                        
+                    }
+                    &.red-bar {
+                        border: 1px solid red;
+                        color: red;
+                        background-color: red;
+                        left: 50%;
+                    }
+
+                    .percentage-info {
+                        position: absolute;
+                        left: 22%;
+                        bottom: 5%;
+                        padding: 10px;
+                        height: 40px;
+                        margin-bottom: 100%;
+                    }
+                }
+               
+            }
+        }
+    }
+}

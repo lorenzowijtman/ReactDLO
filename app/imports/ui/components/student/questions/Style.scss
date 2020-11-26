@@ -1,0 +1,198 @@
+.question-container {
+
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #7ab8ff;
+    z-index: 99999;
+    position: absolute;
+
+    .show {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .back-button {
+        position: absolute;
+        background-color: #fff;
+
+        .stop-button {
+            text-align: center;
+            color : #7ab8ff;
+            margin: 5px;
+        }
+    }
+  
+    .test-subject {
+        text-align: center;
+        padding-top : 20px;
+        font-size: 3em;
+        color : white;
+    }
+    .question-number {
+        text-align: center;
+        padding-top : 10px;
+        padding-bottom: 20px;
+        color : #C5DFFC;
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    .q-and-a-container {
+        border-color: white;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        max-width: 110vh;
+        height: 60%;
+        top: 60%;
+        left: 50%;
+        border-radius: 30px;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 4px 8px 0 lightgrey, 0 6px 20px 0 darkgrey;
+
+        .question-answer-box {
+            list-style-type: none;
+
+            .question {
+                .text {
+                    width: 95%;
+                    font-weight: 500;
+                    font-size: 1.5em;
+                    margin-top: 6%;
+
+                    p {
+                        width: 44%;
+                    }
+
+                    img {
+                        width: 30%;
+                        max-width: 300px;
+                        right: 20px;
+                        z-index: 999999;
+                        position: absolute;
+                        border: 1px solid lightgrey;
+                    }
+                    img:hover {
+                        transform: scale(2);
+                    }
+
+                    .react-player {
+                        max-width: 54%;
+                        max-height: 60%;
+                        right: 20px;
+                        z-index: 999999;
+                        position: absolute;
+                        border: 1px solid lightgrey;
+                    }
+
+                    .img-question {
+                        -webkit-animation: mymove 6s infinite; /* Chrome, Safari, Opera */
+                        animation: mymove 6s infinite;
+                    }
+
+                    /* Chrome, Safari, Opera */
+                    @-webkit-keyframes mymove {
+                    from {border:2px solid #00a3da;}
+                    to {border:2px solid #009949;}
+                    }
+
+                    /* Standard syntax */
+                    @keyframes mymove {
+                    from {border:2px solid #00a3da;}
+                    to {border:2px solid #009949;}
+                    }
+                }
+
+                .give-answer-info {
+                    width: 40%;
+                }
+
+                textarea[type=text] {
+                    border: 1px solid grey;
+                    border-radius: 15px;
+                    margin: 1px;
+                    height: 70px;
+                    padding: 10px;
+                }
+                input[type=radio] {
+                    //Still need some design if necessary
+                }
+
+                label {
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+
+    .switch-qtns-btn-container {
+        vertical-align: bottom;
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+
+        .previous-btn {
+            margin: 5px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px 0 lightgrey, 0 6px 20px 0 whitesmoke;
+        }
+        .next-btn {
+            background-color: #66bb6a;
+            border-radius: 15px;
+            padding: 0.5em 0.75em;
+            margin: 5px;
+            color: white;
+            border: 1px solid #66bb6a;
+            box-shadow: 0 4px 8px 0 lightgrey, 0 6px 20px 0 whitesmoke;
+        }
+        .submit-btn {
+            background-color: gold !important;
+            border: 1px solid gold;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px 0 lightgrey, 0 6px 20px 0 whitesmoke;
+        }
+    }
+
+    .progress {
+        position: absolute;
+        top : 90%;
+        right : 5%;
+        width : 60vh;
+        height : 8vh;
+
+        .list {
+            float: right;
+            display: inline;
+            pointer-events:none;
+            
+            .square {
+                display: inline;
+                padding-left : 5px;
+                padding-right : 5px;
+                padding-bottom: 3px;
+                padding-top: 3px;
+                color : white;
+                border : 1px solid white;
+                margin : 4px;
+            }
+            .current-square {
+                display: inline;
+                padding-left : 5px;
+                padding-right : 5px;
+                padding-bottom: 3px;
+                padding-top: 3px;
+                background-color: white;
+                border : 1px solid #7ab8ff;
+                margin : 4px;
+            }
+        }
+    }
+
+}

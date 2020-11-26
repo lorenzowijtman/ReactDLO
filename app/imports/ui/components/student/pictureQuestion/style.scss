@@ -1,0 +1,43 @@
+.student-picture-question-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 99vh;
+  img {
+    max-width: 160px;
+    max-height: 200px;
+    display: inline-block;
+  }
+
+  label {
+    cursor: pointer;
+    input[type="radio"] {
+      /* HIDE RADIO */
+      display: none; /* Makes input not-clickable */
+      position: absolute; /* Remove input from document flow */
+    }
+  }
+
+  .selected {
+    border: 5px solid #7ab8ff;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7ab8ff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7ab8ff;
+}

@@ -1,0 +1,50 @@
+.admin-header {
+    clear: both;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    min-height: 71px;
+
+    .logo-container {
+        padding: 15px 24px;
+        width: 15%;
+        min-width: 250px;
+        display: inline-block;
+    }
+
+    .logo {
+        background-size: 77px 41px;
+        background-position: center left;
+        height: 41px;
+        width: 77px;
+    }
+
+    .title-and-avatar-container {
+        display: inline-block;
+        width: 85%;
+        
+    }
+    
+    .page-title {
+        display: inline-block;
+        vertical-align: center;
+        margin: 0;
+        margin-left: 30px;
+        font-weight: 500;
+    }
+
+    .page-title-input {
+        border: 0;
+        font-weight: 500;
+        font-size: 2em;
+        padding-left: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

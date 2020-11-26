@@ -1,0 +1,15 @@
+.filter-bar {
+    width: 100%;
+    display: block;
+
+    ul {
+        display: block;
+        margin-left: -20px;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 10px;
+        list-style-type: none;
+    }
+}

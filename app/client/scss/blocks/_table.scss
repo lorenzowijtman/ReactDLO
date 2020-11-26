@@ -1,0 +1,55 @@
+.table {
+    background-color: $white;
+
+    &--admin {
+        width: 100%;
+        background-color: #fff;
+        border-collapse: collapse;
+        border: 1px solid $light-gray;
+
+        &--dashboard {
+            
+        }
+    }
+
+    &__header {
+        text-align: left;
+    }
+
+    &__body {
+        
+    }
+
+    &__row {
+
+    }
+
+    &__cell {
+        padding: 1.25rem 2.5rem;
+
+        &--head {
+            padding: 1.875rem 2.5rem;
+            padding-bottom: $admin-base-spacing;
+            font-weight: 200;
+            color: $medium-gray;
+        }
+    }
+
+    .difficulty-dots {
+        width: 20px;
+        height: 20px;
+        background-color: $red;
+        display: inline-block;
+        border-radius: 50%;
+
+        margin-right: $admin-small-spacing / 2;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: $lightest-gray;
+    } 
+}

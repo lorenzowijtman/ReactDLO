@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="33px" viewBox="0 0 30 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-lesson</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="student" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Desktop-HD" transform="translate(-46.000000, -165.000000)" stroke="#00A3DA" stroke-width="2">
+            <g id="sidebar">
+                <g id="menu" transform="translate(0.000000, 122.000000)">
+                    <g id="menu-item" transform="translate(0.000000, 29.000000)">
+                        <g id="icon-lesson" transform="translate(47.000000, 15.000000)">
+                            <path d="M7,25.9 L7,27.3 C7,30.45 3.5,30.8 3.5,30.8 C3.5,30.8 24.2599,30.8 24.5,30.8 C26.4327,30.8 28,29.2327 28,27.3 L28,25.9 L7,25.9 Z" id="Shape"></path>
+                            <path d="M23.8,22.4 L23.8,0 L0,0 L0,27.3 C0,29.2327 1.5673,30.8 3.5,30.8" id="Shape"></path>
+                            <path d="M5.6,7 L18.2,7" id="Shape"></path>
+                            <path d="M5.6,12.6 L18.2,12.6" id="Shape"></path>
+                            <path d="M5.6,18.2 L18.2,18.2" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

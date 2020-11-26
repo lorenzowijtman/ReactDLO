@@ -1,0 +1,20 @@
+.user-settings-container {
+  .layout--1-col {
+    grid-row-gap: 0px !important;
+  }
+  .full-width {
+      width: 100%;
+
+      &.green {
+        background-color: #81c784 !important;
+        border: 1px solid #81c784;
+      }
+  }
+  .hide-input {
+    background-color: #FBFBFB;
+    border: none;
+  }
+  .btn-cursor {
+    cursor: pointer;
+  }
+}

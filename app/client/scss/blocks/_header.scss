@@ -1,0 +1,30 @@
+.header {
+    &--admin {
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 100%;
+
+        grid-template-areas: 
+            "page-title avatar";
+
+        width: 100%;
+        clear: both;
+
+        place-self: stretch;
+        align-items: center;
+        padding: 0 $admin-base-spacing;
+
+        border-bottom: 1px solid $light-gray;
+    }
+
+    &--student {
+        grid-area: header;
+    }
+
+    &--bg-color {
+        &--white {
+            background-color: $white;
+        }
+    }
+}

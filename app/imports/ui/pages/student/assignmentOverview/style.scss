@@ -1,0 +1,11 @@
+.assignment-overview {
+    height: 100%;
+    margin-left: 10px;
+
+    .assignment-overview-container {
+        height: calc(100% - 46px);
+        overflow-y: auto;
+        margin-top: 0px;
+        max-height: 100vh;
+    }
+}

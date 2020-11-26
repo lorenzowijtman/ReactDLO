@@ -1,0 +1,28 @@
+.assignment-table {
+    width: 100%;
+    background-color: #fff;
+    border-collapse: collapse;
+
+    td,
+    th {
+        padding: 20px;
+        border: none;
+    }
+
+    th {
+        text-align: left;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #FBFBFB;
+    } 
+
+    .difficulty-dots {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+        background-color: blue;
+        display: inline-block;
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,33 @@
+$menu-offset: 24px;
+
+.student-sidebar {
+  width: calc(100vh);
+  float: left;
+  height: 100vh;
+  max-width: 225px;
+  border-right: 1px solid lightgray;
+  margin-right: 10px;
+  flex: 1;
+  background-color: lightblue;
+  z-index: 999;
+  position: relative;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-item {
+    border-bottom: 1px solid lightgray;
+    background-color: #00a3da;
+    font-weight: bold;
+    list-style-type: none;
+  }
+
+  a {
+    padding: 24px 12px;
+    display: block;
+    text-decoration: none;
+    color: white;
+  }
+}

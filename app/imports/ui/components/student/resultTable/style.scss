@@ -1,0 +1,24 @@
+.student-result-table {
+    width: 100%;
+    background-color: #fff;
+    border-collapse: collapse;
+
+    td,
+    th {
+        padding: 20px;
+        border: none;
+
+        &.resultPercentage {
+            color: green;
+            font-weight: bold;
+        }
+    }
+
+    th {
+        text-align: left;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #FBFBFB;
+    } 
+}

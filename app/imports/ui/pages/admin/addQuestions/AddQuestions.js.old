@@ -1,0 +1,218 @@
+import React, { Component } from 'react';
+import { Meteor } from 'meteor/meteor';
+import { Mongo } from 'meteor/mongo';
+import './Style.css';
+import QuestionBlock from '../../../components/admin/questionBlock/QuestionBlock';
+import VideoBox from '../../../components/admin/videoBox/VideoBox';
+
+class AddQuestions extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      amountOfQuestions: 0,
+      assignmentName: '',
+      assignmentDescription: '',
+      questions: [],
+    };
+    this.addQuestionBlock = this.addQuestionBlock.bind(this);
+    this.renderQuestionBlock = this.renderQuestionBlock.bind(this);
+    this.makePublic = this.makePublic.bind(this);
+    this.assignmentNameHandler = this.assignmentNameHandler.bind(this);
+    this.getForminput = this.getForminput.bind(this);
+    this.assignmentDescriptionHandler = this.assignmentDescriptionHandler.bind(this);
+  }
+
+  getForminput(callback) {
+    const questionsArr = [];
+    let firstQst = 0;
+    let secondQst = 1;
+    let thirdQst = 2;
+    for (let i = 0; i < this.state.amountOfQuestions; i++) {
+      const input = {
+        questionName: document.getElementsByClassName('Question')[i].value,
+        answers: [
+          {
+            answer: document.getElementsByClassName('Answer')[firstQst].value,
+            correct: document.getElementsByClassName('radioGroup')[firstQst].checked,
+          },
+          {
+            answer: document.getElementsByClassName('Answer')[secondQst].value,
+            correct: document.getElementsByClassName('radioGroup')[secondQst].checked,
+          },
+          {
+            answer: document.getElementsByClassName('Answer')[thirdQst].value,
+            correct: document.getElementsByClassName('radioGroup')[thirdQst].checked,
+          },
+        ],
+      };
+
+      questionsArr.push(input);
+
+      firstQst += 3;
+      secondQst += 3;
+      thirdQst += 3;
+    }
+    this.setState(
+      {
+        questions: questionsArr,
+      },
+      callback,
+    );
+  }
+
+  addQuestionBlock() {
+    let amount = this.state.amountOfQuestions;
+    amount += 1;
+    console.log(amount);
+
+    this.setState({
+      amountOfQuestions: amount,
+    });
+  }
+
+  makePublic() {
+    const assignmentNameValue = document.getElementById('assignmentName').value;
+    this.setState({
+      assignmentName: assignmentNameValue,
+    });
+    if (assignmentNameValue !== '') {
+      this.getForminput(() => {
+        const assnqst = this.state.questions;
+        console.log(this.state.questions);
+        const assnDsc = this.state.assignmentDescription;
+
+        const assignmentData = {
+          name: assignmentNameValue,
+          description: assnDsc,
+          questions: assnqst,
+        };
+        console.log(assignmentData);
+
+        Meteor.call('assignments.add', assignmentData);
+      });
+      const assnqst = this.state.questions;
+      const assnDsc = this.state.assignmentDescription;
+
+      const assignmentData = {
+        name: assignmentNameValue,
+        description: assnDsc,
+        questions: assnqst,
+      };
+
+      Meteor.call('assignments.add', assignmentData);
+      alert('Opdracht toegevoegd!');
+      window.location = '/admin/opdrachten';
+    } else {
+      alert('Voer een naam in voor de opdracht');
+    }
+  }
+
+  assignmentNameHandler(e) {
+    const { value } = e.target;
+
+    this.setState({
+      assignmentName: value,
+    });
+  }
+
+  assignmentDescriptionHandler(e) {
+    const { value } = e.target;
+
+    this.setState({
+      assignmentDescription: value,
+    });
+  }
+
+  removeQuestionBlock() {
+    // TODO not functional yet, make delete button work(sprint 2)
+    let amount = this.state.amountOfQuestions;
+    amount -= 1;
+    console.log(amount);
+
+    this.setState({
+      amountOfQuestions: amount,
+    });
+  }
+
+  deleteAssignment() {
+    const confirmation = window.confirm('Opdracht verwijderen?');
+    if (confirmation == true) {
+      alert('Opdracht verwijderd');
+    }
+  }
+
+  renderQuestionBlock() {
+    const blocks = [];
+    for (let i = 0; i < this.state.amountOfQuestions; i += 1) {
+      blocks.push(<QuestionBlock key={i} />);
+    }
+    return blocks;
+  }
+
+  render() {
+    return (
+      <div className="AddQuestions">
+        <div className="QuestionsBox">
+          <h2 className="TopParagraph">Questions</h2>
+          <h3>Naam opdracht:</h3>
+          <input
+            type="text"
+            id="assignmentName"
+            onChange={this.assignmentNameHandler}
+            value={this.state.assignmentName}
+          />
+          <VideoBox/>
+          {this.renderQuestionBlock()}
+          <button className="NewQuestion" onClick={this.addQuestionBlock}>
+            Nieuwe vraag
+          </button>
+        </div>
+        <div className="SettingAndDelete">
+          <div className="Settings">
+            <h3>Instellingen</h3>
+            <p>
+              <span className="SettingsSub">Status:</span> Geplubliceerd&nbsp;
+              <button className="SettingBtn">x</button>
+            </p>
+            <p>
+              <span className="SettingsSub">Zichtbaar:</span> Openbaar&nbsp;
+              <button className="SettingBtn">x</button>
+            </p>
+            <p>
+              <span className="SettingsSub">Groepen:</span> Alle{' '}
+              <button className="SettingBtn">x</button>
+            </p>
+            <p>
+              <span className="SettingsSub">Soort opdracht:</span> Meerkeuze&nbsp;
+              <button className="SettingBtn">x</button>
+            </p>
+            <button className="Upload" onClick={this.makePublic}>
+              Publiceren
+            </button>
+            <button className="SaveConcept">Opslaan als concept</button>
+          </div>
+          <div className="Description">
+            <h3>Beschrijving</h3>
+            <textarea
+              id="assignmentDescription"
+              type="text"
+              onChange={this.assignmentDescriptionHandler}
+              value={this.state.assignmentDescription}
+              rows="10"
+              cols="50"
+            />
+          </div>
+          <div className="DeleteBox">
+            <h3>Verwijderen</h3>
+            <p>Groep verwijderen?</p>
+            <button className="DeleteButton" onClick={this.deleteAssignment}>
+              Verwijderen
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default AddQuestions;

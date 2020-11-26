@@ -1,0 +1,40 @@
+.student-result-assignment {
+  height: calc(100% - 46px);
+  overflow-y: auto;
+  max-height: 100vh;
+  .result-assignment-container {
+    .question-block {
+      // border: 1px solid black;
+      width: 85vh;
+      float: left;
+      margin: 5px;
+      padding-left: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid lightgray;
+      
+      
+
+      &.wrong-answer {
+        border: 2px solid red;
+        box-shadow: 0 3px 3px 0 red, 0 2px 2px 0 red;
+      }
+      &.correct-answer {
+        border: 2px solid lightgreen;
+        box-shadow: 0 3px 3px 0 lightgreen, 0 2px 2px 0 lightgreen;
+      }
+    }
+  }
+
+  .top-container {
+    border: 1px solid lightgray;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .resultImage {
+    max-width: 20%;
+    max-height: 20%;
+}
+}

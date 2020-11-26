@@ -1,0 +1,30 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "allowImportExportEverywhere": true
+  },
+  "env": {
+    "browser": true
+  },
+  "plugins": ["meteor"],
+  "extends": ["airbnb", "plugin:meteor/recommended", "@meteorjs/eslint-config-meteor"],
+  "settings": {
+    "import/core-modules": ["meteor/meteor"]
+  },
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": ["_id"]
+      }
+    ],
+    "import/no-extraneous-dependencies": 0,
+    "jsx-a11y/anchor-is-valid": ["error", {
+        "components": ["Link"],
+        "specialLink": ["to"],
+        "aspects": ["noHref", "invalidHref", "preferButton"],
+      }]
+  },
+  
+}

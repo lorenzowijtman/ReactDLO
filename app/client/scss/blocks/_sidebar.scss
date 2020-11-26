@@ -1,0 +1,63 @@
+$sidebar-admin-offset: 1.5rem;
+
+.sidebar {
+    display: grid;
+    
+    &--admin {
+        grid-template-columns: auto;
+        grid-template-rows: 70px auto;
+        grid-template-areas: 
+        "logo"
+        "menu";
+
+        min-height: 100vh;
+        border-right: 1px solid $light-gray;
+
+        @media screen and (max-width: #{$break-small}) {
+            grid-template-areas: "logo";
+            grid-template-rows: 70px;
+            min-height: 0;
+        }
+    }
+
+    &__logo {
+        grid-area: logo;
+        @include background-image('/images/logo.svg', 77px auto, left $sidebar-admin-offset center);
+
+        border-bottom: 1px solid $light-gray;
+        padding-left: $sidebar-admin-offset;
+    }
+    &__logo_student {
+        grid-area: logo;
+        @include background-image('/images/logo.png', 77px auto, left $sidebar-admin-offset center);
+
+        border-bottom: 1px solid $light-gray;
+        padding-left: $sidebar-admin-offset;
+        background-color: #00a3da;
+    }
+
+    &--student {
+        grid-template-columns: auto;
+        grid-template-rows: 90px auto;
+        grid-template-areas: 
+        "logo"
+        "menu";
+
+        min-height: 100vh;
+        border-right: 1px solid $light-gray;
+
+        @media screen and (max-width: #{$break-small}) {
+            grid-template-areas: "logo";
+            grid-template-rows: 70px;
+            min-height: 0;
+        }
+    }
+
+    &__logo--student {
+        @include background-image('/images/student/logo-junior.svg', 77px auto, center);
+        grid-area: logo;
+        border: none;
+        padding: 0;
+
+    }
+}

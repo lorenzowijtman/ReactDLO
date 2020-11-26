@@ -1,0 +1,50 @@
+$header-height: 71px;
+$menu-offset: 24px;
+
+.admin-sidebar {
+    min-height: calc(100vh - #{$header-height});
+    width: 100%;
+    max-width: 250px;
+    background-color: #fff;
+
+    .menu-title {
+        margin-left: $menu-offset;
+        margin-top: $menu-offset;
+        display: block;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .logo-container {
+        padding: 15px 24px;
+        width: 15%;
+        min-width: 250px;
+        display: inline-block;
+    }
+
+    .logo {
+        background-size: 77px 41px;
+        background-position: center left;
+        height: 41px;
+        width: 77px;
+    }
+
+    .main-menu {
+        margin-left: $menu-offset;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .menu-item {
+        list-style-type: none;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+        padding: 13px 0;
+        display: block;
+    }
+}

@@ -1,0 +1,34 @@
+.account-widget {
+    position: relative;
+
+    &--admin {
+        grid-area: avatar;
+        justify-self: end;
+
+        &__dropdown {
+            border: 1px solid $light-gray;
+            border-top: 0;
+            top: 60px;
+        }
+    }
+
+    &__welcome {
+        display: inline-block;
+        padding: 0 $admin-small-spacing;
+    }
+
+    &__dropdown {
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        max-width: 250px;
+        background-color: $white;
+        padding: $admin-small-spacing;
+        z-index: 9999;
+        
+    }
+
+    &__link {
+        margin-top: 0;
+    }
+}

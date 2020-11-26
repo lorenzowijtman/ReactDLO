@@ -1,0 +1,101 @@
+.auth-container {
+    // @include background-image('/images/logo-background.svg');
+
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    .block:first-child {
+        margin-bottom: 30px;
+    }
+}
+
+.container-container {
+
+    background-color: #FBFBFB;
+    width : 30%;
+    min-height : 40%;
+    margin-top : 100px;
+    margin-left : auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    box-sizing: content-box;
+
+    .login-header {
+        text-align: center;
+        padding-top: 10px;
+       
+    }
+
+    .center-div {
+        text-align: center;
+    }
+
+    .login-container {
+        border-radius: 4px;
+        margin : auto;
+        width : 90%;
+        min-height : 50%;
+        box-sizing: content-box;
+
+
+        .login-text {
+            margin-left : 10%;
+        }
+        .login-input {
+            margin-left: 10%;
+            width : 80%;
+        }
+        
+        .login-button {
+            margin-top : 20px;
+            margin-bottom : 20px;
+            color: white;
+            border: 1px solid red;
+            background-color: red;
+            min-width: 50%;
+        }
+    }
+
+   
+}
+
+.container-container-register {
+    background-color:#FBFBFB;
+    border-radius: 4px;
+    width : 30%;
+    height : 35%;
+    padding-bottom: 20px;
+    margin-top : 20px;
+    margin-left : auto;
+    margin-right: auto;
+    box-sizing: content-box;
+
+    .register-header {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .center-div {
+        text-align: center;
+    }
+    
+    .register-container {
+        border-radius: 4px;
+        margin : auto;
+        width : 90%;
+        height : 70%;
+        box-sizing: content-box;
+    }
+
+    .register-button {
+        margin-bottom : 20px;
+        color: white;
+        border: 1px solid red;
+        background-color: red;
+        min-width: 50%;
+    }
+
+}

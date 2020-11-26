@@ -1,0 +1,33 @@
+.course-add {
+    .course-title-container {
+        width: 100%;
+        float: left;
+    }
+
+    .left-column {
+        float: left;
+        width: calc(65% - 30px);
+        margin-right: 30px;
+    }
+
+    .right-column {
+        float: right;
+        width: 35%;
+    }
+
+    .assignment-overview {
+        width: 100%;
+        float: left;
+        background-color: white;
+        padding: 20px;
+    }
+
+    .settings,
+    .delete {
+        width: 100%;
+        float: right;
+        background-color: white;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+}

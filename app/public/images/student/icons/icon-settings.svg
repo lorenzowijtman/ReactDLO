@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-settings</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="student" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Desktop-HD" transform="translate(-44.000000, -285.000000)" stroke="#00A3DA" stroke-width="2">
+            <g id="sidebar">
+                <g id="menu" transform="translate(0.000000, 122.000000)">
+                    <g id="menu-item-copy-2" transform="translate(0.000000, 149.000000)">
+                        <g id="icon-settings" transform="translate(45.000000, 15.000000)">
+                            <circle id="Oval" cx="15" cy="15" r="4"></circle>
+                            <path d="M30,18 L30,12 L26.94,12 C26.194,12 25.48,11.571 25.152,10.777 C24.854,10.056 25.013,9.23 25.565,8.679 L27.729,6.515 L23.486,2.272 L21.322,4.436 C20.77,4.988 19.945,5.147 19.224,4.849 C18.429,4.52 18,3.806 18,3.06 L18,0 L12,0 L12,3.06 C12,3.843 11.524,4.542 10.801,4.839 C10.013,5.162 9.209,4.966 8.679,4.436 L6.515,2.272 L2.272,6.515 L4.436,8.679 C4.966,9.209 5.162,10.013 4.839,10.801 C4.542,11.525 3.843,12 3.06,12 L0,12 L0,18 L3.06,18 C3.843,18 4.541,18.475 4.839,19.199 C5.162,19.987 4.966,20.791 4.436,21.321 L2.272,23.485 L6.515,27.728 L8.679,25.564 C9.231,25.012 10.056,24.853 10.777,25.151 C11.571,25.48 12,26.194 12,26.94 L12,30 L18,30 L18,26.94 C18,26.194 18.429,25.48 19.223,25.152 C19.944,24.854 20.77,25.013 21.321,25.565 L23.485,27.729 L27.728,23.486 L25.564,21.322 C25.034,20.792 24.838,19.988 25.161,19.2 C25.458,18.475 26.157,18 26.94,18 L30,18 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

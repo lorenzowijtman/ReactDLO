@@ -1,0 +1,25 @@
+.dashboard-table {
+    width: 100%;
+    background-color: #fff;
+    border-collapse: collapse;
+    border: 1px solid lightgrey;
+
+    td,
+    th {
+        padding: 20px;
+        border: none;
+    }
+
+    th {
+        text-align: left;
+    }
+
+    .difficulty-dots {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+        background-color: blue;
+        display: inline-block;
+        border-radius: 50%;
+    }
+}

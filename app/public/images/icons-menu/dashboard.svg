@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="17px" viewBox="0 0 15 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>dashboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="admin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="admin---dashboard" transform="translate(-24.000000, -143.000000)" fill="#4C4C4C" fill-rule="nonzero">
+            <g id="sidebar">
+                <g id="menu" transform="translate(0.000000, 94.000000)">
+                    <g id="menu-button" transform="translate(0.000000, 35.000000)">
+                        <g id="dashboard" transform="translate(24.000000, 14.000000)">
+                            <path d="M7.42862222,0.0954833333 C7.28544444,-0.0318277778 7.07011111,-0.0318277778 6.92693333,0.0954833333 L0.126933333,6.13992778 C0.0460888889,6.21170556 0,6.31483889 0,6.42288333 L0,15.86695 C0,16.2843944 0.338111111,16.6225056 0.755555556,16.6225056 L4.91111111,16.6225056 C5.11964444,16.6225056 5.28888889,16.4532611 5.28888889,16.2447278 L5.28888889,11.3336167 L9.06666667,11.3336167 L9.06666667,16.2447278 C9.06666667,16.4532611 9.23591111,16.6225056 9.44444444,16.6225056 L13.6,16.6225056 C14.0174444,16.6225056 14.3555556,16.2843944 14.3555556,15.86695 L14.3555556,6.42288333 C14.3555556,6.31483889 14.3094667,6.21208333 14.2286222,6.14030556 L7.42862222,0.0954833333 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

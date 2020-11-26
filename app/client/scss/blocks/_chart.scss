@@ -1,0 +1,34 @@
+$chart-offset: 30px;
+
+.chart {
+    &__container {
+        position: relative;
+        height: 200px;
+    }
+
+    &__bar {
+        position: absolute;
+        width: 40px;
+        bottom: 0;
+        background-color: $medium-gray;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &--success {
+            left: calc(50% - #{$chart-offset});
+            background-color: $green;
+        }
+
+        &--wrong {
+            left: calc(50% + #{$chart-offset});
+            background-color: $red;
+        }
+    }
+
+    &__percentage {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

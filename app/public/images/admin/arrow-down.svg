@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="8px" viewBox="0 0 18 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="admin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.28589221">
+        <g id="admin---assignments---overview" transform="translate(-1392.000000, -31.000000)" fill="#111111" fill-rule="nonzero">
+            <g id="header">
+                <g id="person" transform="translate(1247.000000, 18.000000)">
+                    <g id="arrow-down" transform="translate(145.000000, 13.000000)">
+                        <path d="M17.691375,1.35675 L16.808625,0.143625 L9,5.822625 L1.191375,0.14325 L0.308625,1.356375 L8.558625,7.356375 C8.821875,7.547625 9.17775,7.547625 9.441375,7.356375 L17.691375,1.35675 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

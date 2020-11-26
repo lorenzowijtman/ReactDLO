@@ -1,0 +1,51 @@
+.media {
+    &--stats {
+        margin-bottom: 30px;
+        display: inline-block;
+        margin-right: 30px;
+        width: 100%;
+        display: flex;
+        min-height: 180px;
+        align-items: center;
+        justify-content: space-around;
+
+        &__inner-container {
+            max-width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &__icon,
+        &__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: middle;
+        }
+
+        &__icon {
+            @include background-image('/images/admin/students-icon.svg', contain);
+            height: 64px;
+            width: 64px;
+        }
+
+        &__text {
+            margin-left: 2rem;
+            
+            span {
+                display: block;
+                width: 100%;
+                font-size: $heading-font-size;
+
+                &:first-child {
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}
